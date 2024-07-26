@@ -15,8 +15,19 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
+# Define las rutas de URL para el proyecto.
 urlpatterns = [
+    # Ruta para la interfaz de administración de Django.
+    # Esto permite a los administradores del sitio acceder a la interfaz
+    # de administración estándar de Django en /admin/.
     path('admin/', admin.site.urls),
+    
+    # Ruta para las APIs de la aplicación `drone_api`.
+    # Todas las rutas de la aplicación `drone_api` estarán
+    # anidadas bajo /api/v1/test.
+    # `include('drone_api.urls')` indica a Django que incluya
+    # las rutas definidas en el archivo `urls.py` de la aplicación `drone_api`.
+    path('api/v1/test', include('drone_api.urls')),
 ]
