@@ -21,17 +21,20 @@ Abre una terminal y ejecuta el siguiente comando para clonar el repositorio:
 
 ```bash
     git clone https://github.com/tu_usuario/tu_repositorio.git
+```
 
 
 ### 2. Navega al directorio del proyecto clonado:
 
 ```bash
     cd flight-control-api
+```
 
 ### 3. Crea un entorno virtual:
 
 ```bash
     python3 -m venv ~/.envs/flight_api_env
+```
 
 ### 4. Activa el entorno virtual:
 
@@ -39,16 +42,19 @@ En WSL o Unix:
 
 ```bash
     source ~/.envs/flight_api_env/bin/activate
+```
 
 ### 5. Instalar las dependencias:
 
 ```bash
     pip3 install -r requirements.txt
+```
 
 ### 6. Ejecuta el servidor de desarrollo:
 
 ```bash
     python3 manage.py runserver
+```
 
 El servidor se ejecutará en el puerto: `http://127.0.0.1:8000`.
 
@@ -60,6 +66,7 @@ Para controlar el dron, envía solicitudes POST a`http://127.0.0.1:8000/api/v1/t
     {
         "command": "takeoff"
     }
+```
 
 ## USO
 
