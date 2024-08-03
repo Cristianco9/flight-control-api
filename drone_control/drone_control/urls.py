@@ -29,5 +29,5 @@ urlpatterns = [
     # anidadas bajo /api/v1/test.
     # `include('drone_api.urls')` indica a Django que incluya
     # las rutas definidas en el archivo `urls.py` de la aplicación `drone_api`.
-    path('api/v1/test', include('drone_api.urls')),
+    path('api/v1/test/', include('drone_api.urls')),
 ]

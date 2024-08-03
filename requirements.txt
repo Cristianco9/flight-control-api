@@ -1,2 +1,9 @@
-wheel @ file:///opt/homebrew/Cellar/python%403.12/3.12.4/libexec/wheel-0.43.0-py3-none-any.whl#sha256=ff23205a590f2b902a2a21151019e96b93ab4a1409d7c9748b6bd210f4c0f44d
-wheel @ file:///opt/homebrew/Cellar/python%403.12/3.12.4/libexec/wheel-0.43.0-py3-none-any.whl#sha256=ff23205a590f2b902a2a21151019e96b93ab4a1409d7c9748b6bd210f4c0f44d
+asgiref==3.8.1
+av==12.3.0
+Django==5.0.7
+djangorestframework==3.15.2
+djitellopy==2.5.0
+numpy==2.0.1
+opencv-python==4.10.0.84
+pillow==10.4.0
+sqlparse==0.5.1

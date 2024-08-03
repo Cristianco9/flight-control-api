@@ -45,6 +45,7 @@ class DroneControlView(APIView):
                 # Imprime el nivel de batería del dron
                 print(f"Batería: {drone_tello.get_battery()}%")
 
+                """
                 # El dron despega.
                 drone_tello.takeoff()
                 # El dron se mueve hacia arriba 20 cm.
@@ -73,6 +74,36 @@ class DroneControlView(APIView):
                 drone_tello.move_down(20)
                 # El dron aterriza.
                 drone_tello.land()
+                """
+
+                # El dron despega.
+                drone_tello.takeoff()
+                    
+                # El dron se eleva 1 metro (100 cm).
+                drone_tello.move_up(100)
+                    
+                # Realiza un cuadrado de 1 metro por 1 metro.
+
+                # El dron avanza 1 metro.
+                drone_tello.move_forward(20)
+                # El dron gira 90 grados a la derecha.
+                drone_tello.rotate_clockwise(90)
+
+                drone_tello.move_forward(20)
+                # El dron gira 90 grados a la derecha.
+                drone_tello.rotate_clockwise(90)
+
+                drone_tello.move_forward(20)
+                # El dron gira 90 grados a la derecha.
+                drone_tello.rotate_clockwise(90)
+
+                drone_tello.move_forward(20)
+                # El dron gira 90 grados a la derecha.
+                drone_tello.rotate_clockwise(90)
+                    
+                # El dron aterriza.
+                drone_tello.land()
+
             else:
                 # Devuelve una respuesta de error si el comando no es válido.
                 return Response(
